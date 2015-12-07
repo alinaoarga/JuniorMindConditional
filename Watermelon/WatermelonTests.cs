@@ -12,6 +12,12 @@ namespace Watermelon
             Assert.AreEqual ("DA",CalculatePossibility(20));
             
         }
+        [TestMethod]
+        public void SecondWatermelonTest()
+        {
+            Assert.AreEqual("NU", CalculatePossibility(21));
+
+        }
         string CalculatePossibility(double WatermelonWeight)
         {
             string str1 = "DA";
