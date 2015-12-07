@@ -11,6 +11,11 @@ namespace FarmerLand
         {
             Assert.AreEqual(4, CalculateLandArea (1, 5, 6));
         }
+        [TestMethod]
+        public void SecondFarmerLandTest()
+        {
+            Assert.AreEqual(592900, CalculateLandArea(1, 230, -770000));
+        }
         double CalculateLandArea(double a, double b, double c)
         {
            double delta = b * b - 4 * a * c;
