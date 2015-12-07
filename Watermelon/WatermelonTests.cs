@@ -9,8 +9,8 @@ namespace Watermelon
         [TestMethod]
         public void FirstWatermelonTest()
         {
-            Assert.AreEqual ("DA",CalculatePossibility(20));
-            
+            Assert.AreEqual("DA", CalculatePossibility(20));
+
         }
         [TestMethod]
         public void SecondWatermelonTest()
@@ -22,7 +22,7 @@ namespace Watermelon
         {
             string str1 = "DA";
             string str2 = "NU";
-            return WatermelonWeight % 2 == 0 ? str1 : str2; 
+            return WatermelonWeight % 2 == 0 ? str1 : str2;
         }
     }
 }
