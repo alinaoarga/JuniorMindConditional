@@ -22,14 +22,7 @@ namespace Watermelon
         {
             string str1 = "DA";
             string str2 = "NU";
-            if (WatermelonWeight % 2 == 0)
-            {
-                return str1;
-            }
-            else
-            {
-                return str2;
-            }
+            return WatermelonWeight % 2 == 0 ? str1 : str2; 
         }
     }
 }
