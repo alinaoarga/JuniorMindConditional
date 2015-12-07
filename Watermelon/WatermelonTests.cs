@@ -28,19 +28,13 @@ namespace Watermelon
         {
             string str1 = "DA";
             string str2 = "NU";
-                if (WatermelonWeight == 2)
-                {
-                    return str2;
-                }
-                else if(WatermelonWeight % 2 == 0)
-                {
-                    return str1;
-                }
-                else
+            if (WatermelonWeight == 2)
             {
                 return str2;
             }
-            }
+            else
+            { return WatermelonWeight % 2 == 0 ? str1 : str2; }
         }
     }
+}
 
