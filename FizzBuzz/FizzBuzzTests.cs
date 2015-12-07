@@ -9,25 +9,23 @@ namespace FizzBuzz
         [TestMethod]
         public void FizzTest()
         {
-            Assert.AreEqual();
+            Assert.AreEqual("Fizz", CalculateMultiple(9));
         }
+       
         string CalculateMultiple(double number)
         {
             string str1 = "Fizz";
             string str2 = "Buzz";
             string str3 = "FizzBuzz";
-            if(number % 3 == 0)
+            if (number % 3 == 0)
             {
                 return str1;
             }
-            else if(number % 5 == 0)
+            else if (number % 5 == 0)
             {
                 return str2;
             }
-            else if(number % 3)
-            {
-                return str3;
-            }
+            else return ((number % 3 == 0) && (number % 5 == 0)) ? str3 : str3;
         }
         }
     }
