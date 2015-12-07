@@ -1,0 +1,6 @@
+C:\Users\Baby Blue\Documents\GitHub\JuniorMindConditional\FizzBuzz\obj\Debug\FizzBuzz.csprojResolveAssemblyReference.cache
+C:\Users\Baby Blue\Documents\GitHub\JuniorMindConditional\FizzBuzz\bin\Debug\FizzBuzz.dll
+C:\Users\Baby Blue\Documents\GitHub\JuniorMindConditional\FizzBuzz\bin\Debug\FizzBuzz.pdb
+C:\Users\Baby Blue\Documents\GitHub\JuniorMindConditional\FizzBuzz\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Baby Blue\Documents\GitHub\JuniorMindConditional\FizzBuzz\obj\Debug\FizzBuzz.dll
+C:\Users\Baby Blue\Documents\GitHub\JuniorMindConditional\FizzBuzz\obj\Debug\FizzBuzz.pdb

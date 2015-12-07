@@ -9,7 +9,7 @@ namespace FarmerLand
         [TestMethod]
         public void FirstFarmerLandTest()
         {
-            Assert.AreEqual(4, CalculateLandArea (1, 5, 6));
+            Assert.AreEqual(4, CalculateLandArea(1, 5, 6));
         }
         [TestMethod]
         public void SecondFarmerLandTest()
@@ -18,7 +18,7 @@ namespace FarmerLand
         }
         double CalculateLandArea(double a, double b, double c)
         {
-           double delta = b * b - 4 * a * c;
+            double delta = b * b - 4 * a * c;
             double x1;
             if (delta > 0)
             {

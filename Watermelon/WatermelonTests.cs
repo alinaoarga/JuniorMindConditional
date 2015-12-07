@@ -18,11 +18,29 @@ namespace Watermelon
             Assert.AreEqual("NU", CalculatePossibility(21));
 
         }
+        [TestMethod]
+        public void ThirdWatermelonTest()
+        {
+            Assert.AreEqual("NU", CalculatePossibility(2));
+
+        }
         string CalculatePossibility(double WatermelonWeight)
         {
             string str1 = "DA";
             string str2 = "NU";
-            return WatermelonWeight % 2 == 0 ? str1 : str2;
+                if (WatermelonWeight == 2)
+                {
+                    return str2;
+                }
+                else if(WatermelonWeight % 2 == 0)
+                {
+                    return str1;
+                }
+                else
+            {
+                return str2;
+            }
+            }
         }
     }
-}
+
