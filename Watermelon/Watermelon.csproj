@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AB73A584-01CD-4921-8E76-4155F89FFA7B}</ProjectGuid>
+    <ProjectGuid>{C79DD8D2-7D9D-48A6-80C8-BD80D4194572}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Watermelon</RootNamespace>
