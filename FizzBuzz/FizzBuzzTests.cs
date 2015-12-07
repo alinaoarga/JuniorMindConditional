@@ -11,7 +11,12 @@ namespace FizzBuzz
         {
             Assert.AreEqual("Fizz", CalculateMultiple(9));
         }
-       
+        [TestMethod]
+        public void BuzzTest()
+        {
+            Assert.AreEqual("Buzz", CalculateMultiple(20));
+        }
+
         string CalculateMultiple(double number)
         {
             string str1 = "Fizz";
