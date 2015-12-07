@@ -1,0 +1,6 @@
+C:\Users\Baby Blue\Documents\GitHub\JuniorMindConditional\Watermelon\obj\Debug\Watermelon.csprojResolveAssemblyReference.cache
+C:\Users\Baby Blue\Documents\GitHub\JuniorMindConditional\Watermelon\bin\Debug\Watermelon.dll
+C:\Users\Baby Blue\Documents\GitHub\JuniorMindConditional\Watermelon\bin\Debug\Watermelon.pdb
+C:\Users\Baby Blue\Documents\GitHub\JuniorMindConditional\Watermelon\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Baby Blue\Documents\GitHub\JuniorMindConditional\Watermelon\obj\Debug\Watermelon.dll
+C:\Users\Baby Blue\Documents\GitHub\JuniorMindConditional\Watermelon\obj\Debug\Watermelon.pdb
