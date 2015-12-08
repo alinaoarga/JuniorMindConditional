@@ -27,17 +27,17 @@ namespace FizzBuzz
             string str1 = "Fizz";
             string str2 = "Buzz";
             string str3 = "FizzBuzz";
-            if (number % 3 == 0)
+            if (number % 3 == 0 & number % 5 == 0)
+            {
+                return str3;
+            }
+            else if (number % 3 == 0)
             {
                 return str1;
             }
             else if (number % 5 == 0)
             {
                 return str2;
-            }
-            else if (number % 3 == 0 & number % 5 == 0)
-            {
-                return str3;
             }
 
             else

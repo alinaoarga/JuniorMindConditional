@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FarmerLand", "FarmerLand\Fa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{5DD602C5-0DAF-4090-87B1-4374C851D3B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archaeological", "Archaeological\Archaeological.csproj", "{AA8D4E8A-7A94-4F66-AD32-C617C0E99B1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5DD602C5-0DAF-4090-87B1-4374C851D3B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DD602C5-0DAF-4090-87B1-4374C851D3B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DD602C5-0DAF-4090-87B1-4374C851D3B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA8D4E8A-7A94-4F66-AD32-C617C0E99B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA8D4E8A-7A94-4F66-AD32-C617C0E99B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA8D4E8A-7A94-4F66-AD32-C617C0E99B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA8D4E8A-7A94-4F66-AD32-C617C0E99B1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
