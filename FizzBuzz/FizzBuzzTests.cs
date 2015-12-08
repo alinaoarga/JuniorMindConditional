@@ -21,7 +21,7 @@ namespace FizzBuzz
         {
             Assert.AreEqual("FizzBuzz", CalculateMultiple(15));
         }
-       
+
         string CalculateMultiple(double number)
         {
             string str1 = "Fizz";
@@ -48,6 +48,6 @@ namespace FizzBuzz
 
         }
     }
-    }
+}
 
 

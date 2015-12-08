@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AA8D4E8A-7A94-4F66-AD32-C617C0E99B1E}</ProjectGuid>
+    <ProjectGuid>{F0943E9F-73CF-4633-9CB8-717757E263BB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Archaeological</RootNamespace>
