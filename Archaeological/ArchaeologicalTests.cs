@@ -12,6 +12,12 @@ namespace Archaeological
             double area = CalculateArea(1, 2, 0, 1, 2, 3);
             Assert.AreEqual(0, area);
         }
+        [TestMethod]
+        public void SecondAreaTest()
+        {
+            double area = CalculateArea(0, 3, 4, 0, 0, 0);
+            Assert.AreEqual(6, area);
+        }
         // Am notat cu xA,yA,xB,yB,xC,yC coordonatele punctelor A, B, C, cu a,b,c, laturile triunghiului ABC si cu p semiperimetrul
         double CalculateArea(float xA, float yA, float xB, float yB, float xC, float yC)
         {
