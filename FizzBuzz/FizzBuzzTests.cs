@@ -16,7 +16,12 @@ namespace FizzBuzz
         {
             Assert.AreEqual("Buzz", CalculateMultiple(20));
         }
-
+        [TestMethod]
+        public void FizzBuzzTest()
+        {
+            Assert.AreEqual("FizzBuzz", CalculateMultiple(15));
+        }
+       
         string CalculateMultiple(double number)
         {
             string str1 = "Fizz";
@@ -30,8 +35,19 @@ namespace FizzBuzz
             {
                 return str2;
             }
-            else return ((number % 3 == 0) && (number % 5 == 0)) ? str3 : str3;
-        }
+            else if (number % 3 == 0 & number % 5 == 0)
+            {
+                return str3;
+            }
+
+            else
+            {
+                string x = "nu se divide si cu 3 si cu 5";
+                return x;
+            }
+
         }
     }
+    }
+
 
