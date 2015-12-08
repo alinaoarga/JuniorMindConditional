@@ -4,11 +4,17 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Arrears
 {
     [TestClass]
-    public class UnitTest1
+    public class ArrearsTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void FirstPenaltyTest()
         {
+            Assert.AreEqual(104, CalculateArrears(2, 100));
+        }
+        decimal CalculateArrears(int days, decimal rent)
+        {
+            decimal RentPlusPenalty = rent + days * (2 * rent / 100);
+            return RentPlusPenalty;
         }
     }
 }
