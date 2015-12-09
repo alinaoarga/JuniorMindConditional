@@ -23,6 +23,11 @@ namespace Arrears
         }
         decimal CalculateArrears(int days, decimal rent, decimal percent)
         {
+            return PaidRent(days, rent, ref percent);
+        }
+
+        private decimal PaidRent(int days, decimal rent, ref decimal percent)
+        {
             decimal typeOfRent = rent + days * (percent * rent / 100);
             if (AreUpToTenDays(days))
             {
@@ -38,6 +43,7 @@ namespace Arrears
                 percent = 10;
             return typeOfRent;
         }
+
         private bool AreUpToFortyDays(int days)
         {
             return days < 40;
