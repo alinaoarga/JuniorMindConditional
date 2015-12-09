@@ -6,44 +6,27 @@ namespace Arrears
     [TestClass]
     public class ArrearsTests
     {
+        decimal[] percent = { 2, 5, 10 };
+
         [TestMethod]
         public void FirstPenaltyTest()
         {
-            Assert.AreEqual(104, CalculateArrears(2, 100, 2));
+            Assert.AreEqual(104, CalculateArrears(2, 100));
         }
         [TestMethod]
         public void SecondPenaltyTest()
         {
-            Assert.AreEqual(155, CalculateArrears(11, 100, 5));
+            Assert.AreEqual(155, CalculateArrears(11, 100));
         }
         [TestMethod]
         public void ThirdPenaltyTest()
         {
-            Assert.AreEqual(420, CalculateArrears(32, 100, 10));
+            Assert.AreEqual(420, CalculateArrears(32, 100));
         }
-        decimal CalculateArrears(int days, decimal rent, decimal percent)
+        decimal CalculateArrears(int days, decimal rent)
         {
-            return PaidRent(days, rent, ref percent);
+            var addedPercentage = days <= 10 ? percent[0] * days : days <= 30 ? percent[1] * days : percent[2] * days;
+            return rent + rent * addedPercentage / 100;
         }
-
-        private decimal PaidRent(int days, decimal rent, ref decimal percent)
-        {
-            return rent + days * (percent * rent / 100);
-        }
-
-        private bool AreUpToFortyDays(int days)
-        {
-            return days < 40;
-        }
-
-        private bool AreUpToThirtyDays(int days)
-        {
-            return days < 30;
-        }
-
-        private static bool AreUpToTenDays(int days)
-        {
-            return days < 10;
-        }
-    }
+   }
 }
