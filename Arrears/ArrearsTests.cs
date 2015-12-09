@@ -28,5 +28,5 @@ namespace Arrears
             var addedPercentage = days <= 10 ? percent[0] * days : days <= 30 ? percent[1] * days : percent[2] * days;
             return rent + rent * addedPercentage / 100;
         }
-   }
+    }
 }
