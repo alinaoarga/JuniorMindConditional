@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Archaeological", "Archaeolo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrears", "Arrears\Arrears.csproj", "{923620B3-BBAD-4E9B-9362-97D23A257B08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumbers", "RomanNumbers\RomanNumbers.csproj", "{4ED9AA34-2329-46A4-BB76-A7A51C23E96F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{923620B3-BBAD-4E9B-9362-97D23A257B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{923620B3-BBAD-4E9B-9362-97D23A257B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{923620B3-BBAD-4E9B-9362-97D23A257B08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ED9AA34-2329-46A4-BB76-A7A51C23E96F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED9AA34-2329-46A4-BB76-A7A51C23E96F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED9AA34-2329-46A4-BB76-A7A51C23E96F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED9AA34-2329-46A4-BB76-A7A51C23E96F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
