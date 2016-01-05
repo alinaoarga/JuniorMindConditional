@@ -6,16 +6,17 @@ namespace RomanNumbers
     [TestClass]
     public class RomanNumbersTests
     {
-        string[] roman = { " ", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
-        string[] tenth = { " ", "X", "XX", "XXX" };
-        string[] forty = { " ", "XL", "L", "XC", "C" };
+        string[] roman = { "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
+        string[] tenth = { "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC" };
+        string[] hundred = { "", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+        string[] thousand = { "", "M", "MM", "MMM" };
+
         [TestMethod]
         public void FirstConvertTest()
         {
             Assert.AreEqual("I", ConvertToRoman(1));
         }
-
-
+        
         [TestMethod]
         public void SecondConvertTest()
         {
@@ -86,72 +87,43 @@ namespace RomanNumbers
         {
             Assert.AreEqual("XCIII", ConvertToRoman(93));
         }
+        [TestMethod]
+        public void OneHundredOneTest()
+        {
+            Assert.AreEqual("CI", ConvertToRoman(101));
+        }
+        [TestMethod]
+        public void ThreeHundredOneTest()
+        {
+            Assert.AreEqual("CCCI", ConvertToRoman(301));
+        }
+        [TestMethod]
+        public void EightHundredTwentyThreeTest()
+        {
+            Assert.AreEqual("DCCCXXIII", ConvertToRoman(823));
+        }
+        [TestMethod]
+        public void OneThousandTest()
+        {
+            Assert.AreEqual("M", ConvertToRoman(1000));
+        }
+        [TestMethod]
+        public void ThreeThousandEightHundredTwentyFiveTest()
+        {
+            Assert.AreEqual("MMMDCCCXXV", ConvertToRoman(3825));
+        }
+        [TestMethod]
+        public void ThreeThousandNineHundredNinetyNineTest()
+        {
+            Assert.AreEqual("MMMCMXCIX", ConvertToRoman(3999));
+        }
         string ConvertToRoman(int number)
         {
-            if (number <= 9)
-            {
-                return roman[number];
-            }
-            else if (number == 10)
-            {
-                return tenth[1];
-            }
-            else if (number < 40)
-            {
-
-                int nrOfTens = number / 10;
-                int nrOfRoman = number - nrOfTens * 10;
-                string finalNumber = tenth[nrOfTens] + roman[nrOfRoman];
-                return finalNumber;
-            }
-            else if (number == 40)
-            {
-                return forty[1];
-            }
-            else if (number < 49)
-            {
-                int intNumber = number / 10;
-                int rest = number - intNumber * 10;
-                string finalNum = forty[1] + roman[rest];
-                return finalNum;
-            }
-            else if (number == 50)
-            {
-                return forty[2];
-            }
-            else if (number < 60)
-            {
-                int roundNumber = number / 10;
-                int rests = number - roundNumber * 10;
-                string finalNum = forty[2] + roman[rests];
-                return finalNum;
-            }
-            else if (number == 60)
-            {
-                return forty[2] + tenth[1];
-            }
-            else if (number < 90)
-            {
-                int aNumber = (number - 50) / 10;
-                int restss = (number - 50) - aNumber * 10;
-                string finNumber = forty[2] + tenth[aNumber] + roman[restss];
-                return finNumber;
-            }
-            else if (number == 90)
-            {
-                return forty[3];
-            }
-            else if (number < 100)
-            {
-                int bNumber = number / 10;
-                int resst = number - bNumber * 10;
-                string finNum = forty[3] + roman[resst];
-                return finNum;
-            }
-            else
-            {
-                return forty[4];
-            }
+            int thousands = number / 1000;
+            int hundreds = (number - thousands * 1000) / 100;
+            int tens = ((number - thousands * 1000) - (hundreds * 100)) / 10;
+            int units = ((number - thousands * 1000) - (hundreds * 100)) % 10;
+            return thousand[thousands] + hundred[hundreds] + tenth[tens] + roman[units];
         }
     }
 }
